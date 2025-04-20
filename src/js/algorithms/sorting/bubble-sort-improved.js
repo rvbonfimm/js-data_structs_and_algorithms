@@ -1,16 +1,16 @@
-const utils = require('./utils')
+const utils = require('../../../../utils')
 
 const spec = {
-    name: 'Bubble Sort',
+    name: 'Bubble Sort Melhorado',
     complexity: 'O(n²)',
     understandingStatus: 'done',
     loops: 0
 }
 
-function bubbleSort(array, compareFn = utils.defaultCompare) {
+function modifiedBubbleSort(array, compareFn = utils.defaultCompare) {
     const { length } = array
     for (let i = 0; i < length; i++) {
-        for (let j = 0; j < length - 1; j++) {
+        for (let j = 0; j < length - 1 - i; j++) {
             if (compareFn(array[j], array[j + 1]) === utils.Compare.BIGGER_THAN) {
                 utils.swap(array, j, j + 1)
             }
@@ -31,6 +31,6 @@ function createNonSortedArray(size) {
 }
 let array = createNonSortedArray(5)
 console.log(`Original Array: ${array.join()}`)
-array = bubbleSort(array)
+array = modifiedBubbleSort(array)
 console.log(`Sorted Array: ${array.join()}`)
 console.log(`Alg. Spec.: ${JSON.stringify(spec)}`)
