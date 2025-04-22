@@ -31,3 +31,5 @@ console.log(`Original Array: ${array.join()}`)
 array = insertionSort(array)
 console.log(`Sorted Array: ${array.join()}`)
 console.log(`Alg. Spec.: ${JSON.stringify(spec)}`)
+
+module.exports = insertionSort
