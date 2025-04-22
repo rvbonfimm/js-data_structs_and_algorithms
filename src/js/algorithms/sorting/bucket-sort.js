@@ -3,9 +3,11 @@ const insertionSort = require('./insertion-sort')
 
 const spec = {
     name: 'Bucket Sort (Bin Sort)',
-    complexity: '',
-    description: '',
-    understandingStatus: '',
+    worstComplexity: 'O(n²)',
+    middleComplexity: 'O(n + k)',
+    bestComplexity: 'O(n + k)',
+    description: 'Algoritmo de ordenação com distribuição, separando os elementos em diferentes baldes e aplicando ordenação com outros algoritmos, como o insertion ou quick sort.',
+    understandingStatus: 'Beginner',
     loops: 0,
     swaps: 0
 }
