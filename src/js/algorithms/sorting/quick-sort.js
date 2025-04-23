@@ -45,13 +45,7 @@ function quick(array, left, right, compareFn) {
     }
     return array
 }
-function quickSort(array, compareFn = utils.defaultCompare) {
+export function quickSort(array, compareFn = utils.defaultCompare) {
     return quick(array, 0, array.length - 1, compareFn)
 }
 
-// let array = utils.createAnArray(7, 'random')
-let array = [3, 5, 1, 6, 4, 7, 2]
-console.log(`Original Array: ${array.join()}`)
-array = quickSort(array)
-console.log(`Sorted Array: ${array.join()}`)
-console.log(`Alg. Spec.: ${JSON.stringify(spec)}`)

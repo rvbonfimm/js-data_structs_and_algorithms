@@ -32,9 +32,3 @@ function mergeSort(array, compareFn = utils.defaultCompare) {
     }
     return array
 }
-
-let array = utils.createAnArray(10, 'random')
-console.log(`Original Array: ${array.join()}`)
-array = mergeSort(array)
-console.log(`Sorted Array: ${array.join()}`)
-console.log(`Alg. Spec.: ${JSON.stringify(spec)}`)

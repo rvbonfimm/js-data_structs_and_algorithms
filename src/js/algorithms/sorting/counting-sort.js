@@ -9,7 +9,7 @@ const spec = {
     swaps: 0
 }
 
-function countingSort(array) {
+export function countingSort(array) {
     if (array.length < 2) {
         return array
     }
@@ -30,9 +30,3 @@ function countingSort(array) {
     })
     return array
 }
-
-let array = utils.createAnArray(7, 'random')
-console.log(`Original Array: ${array.join()}`)
-array = countingSort(array)
-console.log(`Sorted Array: ${array.join()}`)
-console.log(`Alg. Spec.: ${JSON.stringify(spec)}`)

@@ -46,17 +46,10 @@ function createBuckets(array, bucketSize) {
     }
     return buckets
 }
-function bucketSort(array, bucketSize = 5) {
+export function bucketSort(array, bucketSize = 5) {
     if (array.length < 2) {
         return array
     }
     const buckets = createBuckets(array, bucketSize)
     return sortBuckets(buckets)
 }
-
-// let array = utils.createAnArray(7, 'random')
-let array = [5,4,3,2,6,1,7,10,9,8]
-console.log(`Original Array: ${array.join()}`)
-array = bucketSort(array)
-console.log(`Sorted Array: ${array.join()}`)
-console.log(`Alg. Spec.: ${JSON.stringify(spec)}`)

@@ -7,8 +7,7 @@ const spec = {
     loops: 0,
     swaps: 0
 }
-
-function selectionSort(array, compareFn = utils.defaultCompare) {
+export function selectionSort(array, compareFn = utils.defaultCompare) {
     const { length } = array
     let indexMin
     for (let i = 0; i < length - 1; i++) {
@@ -27,9 +26,3 @@ function selectionSort(array, compareFn = utils.defaultCompare) {
     }
     return array
 }
-
-let array = utils.createAnArray(5, 'random')
-console.log(`Original Array: ${array.join()}`)
-array = selectionSort(array)
-console.log(`Sorted Array: ${array.join()}`)
-console.log(`Alg. Spec.: ${JSON.stringify(spec)}`)

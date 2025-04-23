@@ -7,7 +7,7 @@ const spec = {
     loops: 0
 }
 
-function bubbleSort(array, compareFn = utils.defaultCompare) {
+export function bubbleSort(array, compareFn = utils.defaultCompare) {
     const { length } = array
     for (let i = 0; i < length; i++) {
         for (let j = 0; j < length - 1; j++) {
@@ -20,17 +20,3 @@ function bubbleSort(array, compareFn = utils.defaultCompare) {
     }
     return array
 }
-
-/* Function to test the bubble sort alg */
-function createNonSortedArray(size) {
-    const array = []
-    for (let i = size; i > 0; i--) {
-        array.push(i)
-    }
-    return array
-}
-let array = createNonSortedArray(5)
-console.log(`Original Array: ${array.join()}`)
-array = bubbleSort(array)
-console.log(`Sorted Array: ${array.join()}`)
-console.log(`Alg. Spec.: ${JSON.stringify(spec)}`)

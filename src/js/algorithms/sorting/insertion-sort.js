@@ -8,7 +8,7 @@ const spec = {
     swaps: 0
 }
 
-function insertionSort(array, compareFn = utils.defaultCompare) {
+export function insertionSort(array, compareFn = utils.defaultCompare) {
     const { length } = array
     let temp
     for (let i = 1; i < length; i++) {
@@ -25,11 +25,3 @@ function insertionSort(array, compareFn = utils.defaultCompare) {
     }
     return array
 }
-
-let array = utils.createAnArray(5, 'random')
-console.log(`Original Array: ${array.join()}`)
-array = insertionSort(array)
-console.log(`Sorted Array: ${array.join()}`)
-console.log(`Alg. Spec.: ${JSON.stringify(spec)}`)
-
-module.exports = insertionSort
