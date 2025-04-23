@@ -3,6 +3,11 @@ const Compare = {
     BIGGER_THAN: 1,
     EQUALS: 0
 }
+export const DOES_NOT_EXIST = -1
+export function defaultEquals(a, b) {
+    return a === b;
+}
+
 function defaultCompare(a, b) {
     if (a === b) {
         return Compare.EQUALS
