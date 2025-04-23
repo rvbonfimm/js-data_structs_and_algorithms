@@ -3,8 +3,8 @@ const Compare = {
     BIGGER_THAN: 1,
     EQUALS: 0
 }
-export const DOES_NOT_EXIST = -1
-export function defaultEquals(a, b) {
+const DOES_NOT_EXIST = -1
+function defaultEquals(a, b) {
     return a === b;
 }
 
@@ -64,5 +64,7 @@ module.exports = {
     swap,
     createAnArray,
     findMaxValue,
-    findMinValue
+    findMinValue,
+    DOES_NOT_EXIST,
+    defaultEquals
 }
