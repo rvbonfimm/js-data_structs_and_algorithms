@@ -45,11 +45,19 @@ function findMaxValue(array) {
     }
     return max
 }
+function findMinValue(array) {
+    let min = array[0]
+    for (let i = 0; i < array.length - 1; i++) {
+        if (array[i] < min) min = array[i]
+    }
+    return min
+}
 
 module.exports = {
     Compare,
     defaultCompare,
     swap,
     createAnArray,
-    findMaxValue
+    findMaxValue,
+    findMinValue
 }
