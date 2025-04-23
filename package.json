@@ -1,8 +1,17 @@
 {
   "name": "estruturas-de-dados_e_algoritmos_javascript_loiane-groner",
   "version": "0.0.0",
-  "keywords": ["algorithms", "data-strctures", "javascript", "typescript"],
+  "keywords": [
+    "algorithms",
+    "data-strctures",
+    "javascript",
+    "typescript"
+  ],
   "author": "rvbonfimm",
   "license": "ISC",
-  "description": "Learning JavaScript Data Structures and Algorithms"
+  "description": "Learning JavaScript Data Structures and Algorithms",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/rvbonfimm/js-data_structs_and_algorithms"
+  }
 }
