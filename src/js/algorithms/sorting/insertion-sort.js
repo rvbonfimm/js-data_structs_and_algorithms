@@ -25,3 +25,4 @@ export function insertionSort(array, compareFn = utils.defaultCompare) {
     }
     return array
 }
+module.exports = { insertionSort }

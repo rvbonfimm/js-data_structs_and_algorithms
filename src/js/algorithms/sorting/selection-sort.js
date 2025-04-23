@@ -26,3 +26,4 @@ export function selectionSort(array, compareFn = utils.defaultCompare) {
     }
     return array
 }
+module.exports = { selectionSort }

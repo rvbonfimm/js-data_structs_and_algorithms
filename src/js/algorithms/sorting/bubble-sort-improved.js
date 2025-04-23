@@ -6,7 +6,7 @@ const spec = {
     understandingStatus: 'done',
     loops: 0
 }
-export function modifiedBubbleSort(array, compareFn = utils.defaultCompare) {
+function modifiedBubbleSort(array, compareFn = utils.defaultCompare) {
     const { length } = array
     for (let i = 0; i < length; i++) {
         for (let j = 0; j < length - 1 - i; j++) {
@@ -19,3 +19,4 @@ export function modifiedBubbleSort(array, compareFn = utils.defaultCompare) {
     }
     return array
 }
+module.exports = { modifiedBubbleSort }

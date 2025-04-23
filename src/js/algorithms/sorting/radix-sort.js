@@ -37,7 +37,7 @@ function countingSortForRadix(array, radixBase, significantDigit, minValue) {
     }
     return array
 }
-export function radixSort(array, radixBase = 10) {
+function radixSort(array, radixBase = 10) {
     if (array.length < 2) return array
 
     const minValue = utils.findMinValue(array)
@@ -50,3 +50,4 @@ export function radixSort(array, radixBase = 10) {
     }
     return [array, spec]
 }
+module.exports = { radixSort }

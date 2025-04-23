@@ -7,7 +7,7 @@ const spec = {
     loops: 0
 }
 
-export function bubbleSort(array, compareFn = utils.defaultCompare) {
+function bubbleSort(array, compareFn = utils.defaultCompare) {
     const { length } = array
     for (let i = 0; i < length; i++) {
         for (let j = 0; j < length - 1; j++) {
@@ -20,3 +20,4 @@ export function bubbleSort(array, compareFn = utils.defaultCompare) {
     }
     return array
 }
+module.exports = { bubbleSort }

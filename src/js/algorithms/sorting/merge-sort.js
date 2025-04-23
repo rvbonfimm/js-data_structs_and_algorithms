@@ -32,3 +32,4 @@ function mergeSort(array, compareFn = utils.defaultCompare) {
     }
     return array
 }
+module.exports = { mergeSort }

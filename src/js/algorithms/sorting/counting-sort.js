@@ -9,7 +9,7 @@ const spec = {
     swaps: 0
 }
 
-export function countingSort(array) {
+function countingSort(array) {
     if (array.length < 2) {
         return array
     }
@@ -30,3 +30,4 @@ export function countingSort(array) {
     })
     return array
 }
+module.exports = { countingSort }

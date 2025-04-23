@@ -46,10 +46,11 @@ function createBuckets(array, bucketSize) {
     }
     return buckets
 }
-export function bucketSort(array, bucketSize = 5) {
+function bucketSort(array, bucketSize = 5) {
     if (array.length < 2) {
         return array
     }
     const buckets = createBuckets(array, bucketSize)
     return sortBuckets(buckets)
 }
+module.exports = { bucketSort }
