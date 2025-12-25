@@ -13,5 +13,10 @@
   "repository": {
     "type": "github",
     "url": "https://github.com/rvbonfimm/js-data_structs_and_algorithms"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.28.5",
+    "@babel/node": "^7.28.0",
+    "@babel/preset-env": "^7.28.5"
   }
 }
